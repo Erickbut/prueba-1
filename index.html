@@ -1,62 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+  <link rel="stylesheet" href="style.css">
+  <title>EB Desarrollo Web</title>
 </head>
 <body>
-  <header class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__logo">
-        <a class="navbar__link" href="#">
-          <i class='bx bx-expand-horizontal navbar__icon'></i>
-          <span class="navbar__name">Nombre</span>
-        </a>
+  <!-- Seccion inicio -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1>★EB★</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+              <li><a href="#sobremi" onclick="seleccionar(this)" >SOBRE MI</a></li>
+              <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+            </ul>
+          </nav>
+  <!-- Iconos del menu responsive -->
+    <div id="icono-nav" onclick="responsiveMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  <!-- iconos de las redes sociales -->
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+  </div>
+</header>
+      <div class="presentacion">
+        <p class="bienvenida">Bienvenidos</p>
+        <h2>Soy <span>Erick Butrón</span>, Desarrollador Web</h2>
+        <p class="descripcion">Bienvenido a mi portafolio virtual, espero que te guste mi página.
+        </p>
+        <a href="#portafolio">Ir a portafolio</a>
+     </div>  
+    </div> 
+  </section>
+
+  <!-- Seccion sobre mi -->
+  <section id="sobremi">
+    <div class="contenedor-foto">
+      <img src="https://i.ibb.co/WfYQ9Dy/Pic-Aboutme.jpg" alt="">
+    </div>
+    <div class="sobremi">
+      <p class="titulo-seccion">Sobre Mi</p>
+      <h2>Hola, soy <span>Erick Butron</span></h2>
+      <h3>Desarrollador Web</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Rerum similique voluptatem perferen.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Rerum similique voluptatem.</p>
+          <a href="#">Descargar CV</a>
+    </div>
+  </section>
+
+  <!-- Seccion Servicios -->
+  <section id="servicios">
+    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+    <div class="fila">
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
       </div>
-      <div id="menu" class="navbar__menu">
-        <i id="btnClose" class='bx bx-x navbar__icon btn--close'></i>
-        <nav class="navbar__list">
-          <a class="navbar__link" href="#">Home</a>
-          <a class="navbar__link" href="#about">About</a>
-          <a class="navbar__link" href="#services">Services</a>
-          <a class="navbar__link" href="#projects">Projects</a>
-          <a class="navbar__link" href="#contact">Contact</a>
-        </nav>
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
       </div>
-      <div class="navbar__button">
-        <i id="btnOpen" class='bx bx-menu navbar__icon btn--open'></i>
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
       </div>
     </div>
-  </header>
+    <div class="fila">
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
+      </div>
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
+      </div>
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Diseño de sitios Web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Web</li>
+          <li>Graphic</li>
+          <li>SEO</li>          
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Eaque similique eos odio neque, nemo in pariatur facilis minus!
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <main class="wrapper">
-    <section id="about" class="about">
-      <h2 class="about__title">About</h2>
-    </section>
+  <!-- Seccion Habilidades -->
+  <div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES</h3>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Html & CSS</p>
+        <span class="porcentaje">95%</span>
+      </div>
+      <div class="barra">
+        <div id="html" class="barra-progreso1"></div>
+      </div>
+    </div>
 
-    <section id="services" class="services">
-      <h2 class="services__title">Services</h2>
-    </section>
-  </main>
-  <script>
-    btnClose.onclick = function () {
-      menu.classList.remove('active')
-    }
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Javascript</p>
+        <span class="porcentaje">90%</span>
+      </div>
+      <div class="barra">
+        <div id="js" class="barra-progreso2"></div>
+      </div>
+    </div>
 
-    btnOpen.onclick = function () {
-      menu.classList.add('active')
-    }
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Base de datos</p>
+        <span class="porcentaje">90%</span>
+      </div>
+      <div class="barra">
+        <div id="bd" class="barra-progreso3"></div>
+      </div>
+    </div>
 
-    menu.addEventListener('click', function (event) {
-      if (event.target.matches('.navbar__link')) {
-        menu.classList.remove('active')
-      }
-    })
-  </script>
-  
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>photoshop</p>
+        <span class="porcentaje">85%</span>
+      </div>
+      <div class="barra">
+        <div id="ps" class="barra-progreso4"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Seccion portafolio -->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://www.medradigital.com/wp-content/uploads/2017/07/E-commerce.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://static.vecteezy.com/system/resources/previews/007/559/613/original/a-children-learning-coding-or-computer-programming-flat-illustration-coding-for-kids-basic-computer-programing-can-be-used-for-web-landing-page-social-media-promotion-etc-vector.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://static.vecteezy.com/system/resources/previews/007/559/606/original/a-children-learning-coding-or-computer-programming-flat-illustration-coding-for-kids-basic-computer-programing-can-be-used-for-web-landing-page-social-media-promotion-etc-vector.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://www.somoslibres.org/images/2021/04/30/javascript.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://www.mas-software.com/wp-content/uploads/2021/08/database-management-system.jpeg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://miro.medium.com/max/1400/1*TtZ1bAE8DF-RNvBYYXQHgA.jpeg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://1simple1.com/wp-content/uploads/2019/03/websolution_addedvalue.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://www.cdmi.in/courses@2x/react-js-training-institute.jpg" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="https://remoteco.s3.amazonaws.com/wp-content/uploads/2020/06/19130545/Remote-team-member.png" alt="">
+          <div class="info">
+            <h4>Descripcion del proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Seccion Contacto -->
+  <section id="contacto">
+    <h3 class="titulo-seccion">Contactanos ahora</h3>
+    <div class="contenedor-form">
+      <form action="">
+        <div class="fila mitad">
+          <input type="text" placeholder="Nombre Completo" class="input-mitad">
+          <input type="text" placeholder="Dirección de Email" class="input-mitad">
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Tema..." class="input-full">
+        </div>
+        <div class="fila">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar mensaje" class="btn-enviar"> 
+      </form>
+    </div>
+  </section>
+
+  <!-- Seccion Footer -->
+  <footer>
+    <p>Todos los derechos reservados - 2022</p>
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="functions.js"></script>
 </body>
 </html>
