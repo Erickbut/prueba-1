@@ -20,7 +20,6 @@ function responsiveMenu(){
         x.className="";
     }
 }
-
 //detecto el scrolling para aplicar la animacion de las barras de habilidades 
 window.onscroll = function(){
     efectoHabilidades()
